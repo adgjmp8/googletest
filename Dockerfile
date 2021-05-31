@@ -10,7 +10,7 @@ RUN apt-get update \
  && git clone https://github.com/google/googletest.git \
  && mkdir googletest/build \
  && cd googletest/build \
- && cmake .. \
+ && cmake .. -DBUILD_SHARED_LIBS=ON \
  && make \
  && make install \
  && cd ../../ \
