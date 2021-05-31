@@ -5,6 +5,7 @@ FROM ubuntu:18.04
 RUN apt-get update \
  && apt-get install -y \
     cmake \
+    git \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && git clone https://github.com/google/googletest.git \
