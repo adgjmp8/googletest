@@ -12,6 +12,6 @@ RUN apt-get update \
  && cd googletest/build \
  && cmake .. \
  && make \
- && make install
+ && make install \
  && cd ../../ \
  && rm -rf googletest
